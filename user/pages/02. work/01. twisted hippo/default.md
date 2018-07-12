@@ -1,6 +1,5 @@
 ---
 title: Twisted Hippo
-menu: Twisted Hippo
 ---
 # Twisted Hippo
 
