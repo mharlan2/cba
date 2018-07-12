@@ -1,0 +1,7 @@
+---
+title: Twisted Hippo
+menu: Twisted Hippo
+---
+# Twisted Hippo
+
+This is the body of **my new page** and I can easily use _Markdown_ syntax here.
