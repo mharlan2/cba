@@ -1,0 +1,12 @@
+email: matt@graveflex.com
+fullname: 'Matthew Harlan'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$mspzBm4q3CdqPw6iikr3ee8ohKajtaad5dI40DEXrz/JaoRscTQsa
+reset: '8c7b7b1a76bc3dd7331f57e93d92af99::1532478457'
