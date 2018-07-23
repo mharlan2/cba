@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ page.content }}
+    <ul class="projectnavigation">
+    {% for page in page.collection %}
+        {% if page.visible %}
+        		{% set first_image = page.media.images|first %}
+            <li><a href="{{ page.url }}">{{first_image.thumbnail('page').display('thumbnail')}}</a></li>
+
+
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endblock %}
+
+
