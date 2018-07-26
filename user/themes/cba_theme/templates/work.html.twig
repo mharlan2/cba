@@ -1,17 +1,44 @@
 {% extends 'partials/base.html.twig' %}
 
+{% set show_sidebar = header_var('show_sidebar')|default(true) %}
+
+{% set collection = page.collection() %}
+
 {% block content %}
-    {{ page.content }}
+ {{ page.content }}
+	{% embed 'partials/layout.html.twig' with {blog: page} %}
+		{% block sidebar %}
+                {% include 'partials/projectsidebar.html.twig' %}
+		{% endblock %}
+	{% endembed %}
+
+   
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
     <ul class="projectnavigation">
     {% for page in page.collection %}
         {% if page.visible %}
-        		{% set first_image = page.media.images|first %}
-            <li><a href="{{ page.url }}">{{first_image.thumbnail('page').display('thumbnail')}}</a></li>
 
+        	<div class ="grid-item">
+        		{% set first_image = page.media.images|first %}
+           		 <li><a href="{{ page.url }}">{{first_image.thumbnail('page').display('thumbnail')}}</a></li>
+           		 <div class="projecttitle">
+           		 		{{page.menu}}
+           		</div>
+            </div>
 
         {% endif %}
-    {% endfor %}
-</ul>
+        
+    {% endfor %}	
+	</ul>
+	</div>
+
+	<script>
+       		$grid.imagesLoaded().progress( function() {
+  				$grid.masonry('layout')
+		</script>
+
 {% endblock %}
+
+
 
 

@@ -1,0 +1,40 @@
+{% extends 'partials/base.html.twig' %}
+
+
+
+
+{% block content %}
+
+
+<div id="projpcontainer">
+
+	<div id="projpimgs">
+		{% for image in page.media.images %}
+   			 <a href="{{ image.url(false) }}">
+     			 <img src="{{ image.url }}"/>
+   			</a>
+		{% endfor %}
+	</div>
+
+	
+	<div id="projptext">
+		<aside>	
+    	{{ page.content }}
+    	</aside>
+    </div>
+    
+	
+</div>
+
+
+
+<script>
+jQuery(document).ready(function($) {
+  $('aside').hcSticky({
+    stickTo: 'main'
+  });
+});
+
+
+</script>
+{% endblock %}

@@ -1,0 +1,9 @@
+enabled: true
+route: /
+filters:
+  category: null
+feed_parameters:
+  count: 3
+  cache_time: 1
+  user_id: couldbearchitecture
+  access_token: 4559278632.d7531c5.311ab05aaa5e450089689abe1c0b5b0d

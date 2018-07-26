@@ -1,4 +1,6 @@
 
+html { overflow-y: scroll; }
+
 @font-face {
     font-family: 'gt_haptikmedium';
     src: url('../fonts/gt-haptik-medium-webfont.woff2') format('woff2'),
@@ -20,3 +22,40 @@ ul {
 h1 {
 	font-size: 72px;
 }
+
+
+
+
+.grid-item { width: 300px; }	
+
+.container.grid-xl {
+max-width: 85%;
+}
+
+#projpcontainer {
+	display: flex;
+}
+
+#projpimgs {
+	width:100%;
+}
+
+#projptext {
+	width:600px;
+	padding-left:50px;
+}
+
+.textcolor {
+	color:#ff8c00;
+}
+
+aside {
+
+}
+
+main { 
+	position: relative;
+	overflow:hidden; 
+	clear:both;
+}
+
