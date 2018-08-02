@@ -25,11 +25,11 @@
 <p class="prev-next text-center">
 
 
-    {% if not page.isLast %}
+    {% if not page.isFirst %}
             <a class="btn" href="{{ page.prevSibling.url }}"><i class="fa fa-angle-left"></i> {{ 'BLOG.ITEM.PREV_POST'|t }}</a>
     {% endif %}
 
-    {% if not page.isFirst %}
+    {% if not page.isLast %}
         <a class="btn" href="{{ page.nextSibling.url }}">{{ 'BLOG.ITEM.NEXT_POST'|t }} <i class="fa fa-angle-right"></i></a>
     {% endif %}
 </p>

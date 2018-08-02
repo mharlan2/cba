@@ -1,0 +1,32 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set related = page.collection() %}
+
+{% block content %}
+
+{{ page.content }}
+
+		<div class ="one-columnimages">
+    {% for image in page.media.images %}
+         <a href="{{ image.url(false) }}">
+           <img src="{{ image.url }}"/>
+        </a>
+    {% endfor %}
+    </div>
+    
+        <div id="relatedcontainer">
+      <ul>
+      {% set random_related = related.random(2) %}
+        {% for page in random_related %}
+          {% set first_image = page.media.images|first %}
+          <li><a href="{{ page.url }}">
+            {{first_image.thumbnail('page').display('thumbnail').resize(150, 75)}}
+
+          </a>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      </div>
+
+{% endblock %}

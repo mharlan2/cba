@@ -1,4 +1,4 @@
-<!--{% macro nav_loop(page) %}
+{% macro nav_loop(page) %}
     {% for p in page.children.visible %}
         {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
         {% if p.children.visible.count > 0 %}
@@ -19,7 +19,7 @@
         {% endif %}
     {% endfor %}
 {% endmacro %}
--->
+
 <ul {{ tree ? 'class="tree"' : '' }}>
     {{ _self.nav_loop(pages) }}
 </ul>

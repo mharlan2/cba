@@ -4,6 +4,9 @@
 
 {% set collection = page.collection() %}
 
+
+
+
 {% block content %}
  {{ page.content }}
 	{% embed 'partials/layout.html.twig' with {blog: page} %}
@@ -13,18 +16,32 @@
 	{% endembed %}
 
    
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
     <ul class="projectnavigation">
     {% for page in page.collection %}
+
         {% if page.visible %}
 
         	<div class ="grid-item">
-        		{% set first_image = page.media.images|first %}
-           		 <li><a href="{{ page.url }}">{{first_image.thumbnail('page').display('thumbnail')}}</a></li>
-           		 <div class="projecttitle">
-           		 		{{page.menu}}
-           		</div>
+            {% if page.media.files %}
+            {% set first_image = page.media.files|first %}
+               <li>{{first_image.thumbnail('page').html}}</li>
+               <div class="projtitle">
+                  <a href="{{ page.url }}">{{page.menu}}</a>
+                  </div>
             </div>
+            
+            {% else %}
+
+
+        		{% set first_image = page.media.images|first %}
+               <li>{{first_image.thumbnail('page').html}}</li>
+               <div class="projtitle">
+                  <a href="{{ page.url }}">{{page.menu}}</a>
+                  </div>
+            </div>
+
+            {% endif %}
 
         {% endif %}
         
@@ -33,9 +50,32 @@
 	</div>
 
 	<script>
-       		$grid.imagesLoaded().progress( function() {
-  				$grid.masonry('layout')
-		</script>
+
+    function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+
+  $('.grid-item').each(function(){
+    if (getRandomInt(0,10) <= 3) {
+        $(this).addClass('large');
+      } else {
+        $(this).addClass('small');
+      }
+        $(this).css({'marginTop' : getRandomInt(-40,40), 'marginLeft' : getRandomInt(-40,40)});
+      });
+
+      var $grid = $('.grid').masonry({
+      });
+
+      $grid.imagesLoaded().progress( function() {
+  		$grid.masonry('layout');
+
+  
+});
+
+  
+  </script>
 
 {% endblock %}
 

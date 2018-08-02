@@ -25,7 +25,8 @@
         &:before {
           content: '\f107';
           font-family: 'FontAwesome';
-          display: inline-block;
+// disabled arrow
+          display: none;
           vertical-align: middle;
           float: right;
           margin-right: - (2 *$dropmenu-child-padding);
@@ -43,7 +44,8 @@
 
       &:hover {
         & > ul {
-          display: block;
+// disable submenu overlay animation
+          display: none;
           visibility: visible;
         }
       }

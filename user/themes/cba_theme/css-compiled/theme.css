@@ -459,7 +459,7 @@ form .form-input[type=range]:focus {
 #header {
   width: 100%;
   height: 4rem;
-  border-bottom: 1px solid rgba(172, 179, 194, 0.2);
+  border-bottom: none;
   font-size: 0.7rem;
   font-weight: 700;
   background: #fff;
@@ -503,7 +503,7 @@ form .form-input[type=range]:focus {
 .header-fixed #header {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 1000;
 }
 
 body.header-fixed.header-animated #header.scrolled {
@@ -566,7 +566,7 @@ body.sticky-footer #page-wrapper {
 .dropmenu ul li a:before {
   content: "";
   font-family: "FontAwesome";
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   float: right;
   margin-right: -20px;
@@ -578,7 +578,7 @@ body.sticky-footer #page-wrapper {
   content: "";
 }
 .dropmenu ul li:hover > ul {
-  display: block;
+  display: none;
   visibility: visible;
 }
 .dropmenu ul ul li a:before {

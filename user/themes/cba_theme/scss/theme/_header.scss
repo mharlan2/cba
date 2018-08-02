@@ -1,7 +1,7 @@
 #header {
   width: 100%;
   height: $header-height-large;
-  border-bottom: 1px solid rgba($gray-color, 0.2);
+  border-bottom: none;
   @extend .default-animation;
 
   font-size: 0.7rem;
@@ -60,7 +60,7 @@
   .header-fixed & {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 1000;
   }
 }
 

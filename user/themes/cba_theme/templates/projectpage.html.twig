@@ -1,40 +1,68 @@
 {% extends 'partials/base.html.twig' %}
 
-
-
+{% set related = page.collection() %}
 
 {% block content %}
 
 
 <div id="projpcontainer">
 
-	<div id="projpimgs">
+	<div id="projpleft">
 		{% for image in page.media.images %}
+
+    
+    <div class="hideme">
    			 <a href="{{ image.url(false) }}">
      			 <img src="{{ image.url }}"/>
    			</a>
+    </div>
+   
 		{% endfor %}
 	</div>
 
-	
-	<div id="projptext">
-		<aside>	
-    	{{ page.content }}
-    	</aside>
-    </div>
+	  
+	<div id="projpright">
+		  
     
-	
-</div>
+    	{{ page.content }}
+      <div id="relatedcontainer">
+      <ul>
+      {% set random_related = related.random(2) %}
+        {% for page in random_related %}
+          {% set first_image = page.media.images|first %}
+          <li><a href="{{ page.url }}">
+            {{first_image.thumbnail('page').display('thumbnail').resize(150, 75)}}
 
+          </a>
+          <a href="{{ page.url }}">{{ page.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    	</div>
+  </div>
+  
+
+</div>
 
 
 <script>
 jQuery(document).ready(function($) {
-  $('aside').hcSticky({
-    stickTo: 'main'
+  $('#projpright').hcSticky({
+    stickTo: '#projpcontainer'
   });
+
+    $(window).scroll( function(){
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            if( bottom_of_window > bottom_of_object){
+                $(this).addClass('showme');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('showme');
+            }
+        });
+    });
 });
-
-
 </script>
 {% endblock %}
