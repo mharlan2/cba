@@ -2,7 +2,7 @@
 
 {% if taxlist %}
 <span class="tags">
-	<a class="label label-rounded {{ label_class }}" href="{{ base_url }}"> ALL </a>
+	<a class="label label-rounded label-secondary" href="{{ base_url }}"> ALL </a>
     {% for tax,value in taxlist[taxonomy] %}
         {% set label_class = uri.param(taxonomy) == tax ? 'label-primary' : 'label-secondary' %}
         <a class="label label-rounded {{ label_class }}" href="{{ base_url }}/{{ taxonomy }}{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>

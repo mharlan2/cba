@@ -17,36 +17,36 @@
 
    
     <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
-    <ul class="projectnavigation">
+
+
+  {{ instagram_feed() }}
+  
+    
     {% for page in page.collection %}
 
         {% if page.visible %}
 
         	<div class ="grid-item">
-            {% if page.media.files %}
+           
+            {% if page.media.files %}     
             {% set first_image = page.media.files|first %}
-               <li>{{first_image.thumbnail('page').html}}</li>
-               <div class="projtitle">
-                  <a href="{{ page.url }}">{{page.menu}}</a>
-                  </div>
-            </div>
-            
+                {{first_image.thumbnail('page').html}}
             {% else %}
-
-
         		{% set first_image = page.media.images|first %}
-               <li>{{first_image.thumbnail('page').html}}</li>
-               <div class="projtitle">
-                  <a href="{{ page.url }}">{{page.menu}}</a>
-                  </div>
-            </div>
-
+                {{first_image.thumbnail('page').html}}
             {% endif %}
 
+             <div class="projtitle">
+                    <a href="{{ page.url }}">{{page.menu}}</a>
+                </div>
+       
+            </div>
         {% endif %}
         
-    {% endfor %}	
-	</ul>
+    {% endfor %}
+
+    	
+	
 	</div>
 
 	<script>
@@ -70,6 +70,10 @@
 
       $grid.imagesLoaded().progress( function() {
   		$grid.masonry('layout');
+
+ 
+
+
 
   
 });

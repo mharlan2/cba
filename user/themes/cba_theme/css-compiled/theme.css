@@ -264,7 +264,7 @@ form .form-input[type=range]:focus {
   top: 40%;
   left: 0;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 101;
 }
 
 .mobile-logo svg {
@@ -280,7 +280,7 @@ form .form-input[type=range]:focus {
   display: none;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 1000;
 }
 .header-fixed .mobile-menu {
   position: fixed;
@@ -297,7 +297,7 @@ form .form-input[type=range]:focus {
   height: 18px;
   width: 24px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 10000;
   transition: opacity 0.25s ease, top 0.5s ease;
 }
 .mobile-menu .button_container:hover {
@@ -503,7 +503,7 @@ form .form-input[type=range]:focus {
 .header-fixed #header {
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 101;
 }
 
 body.header-fixed.header-animated #header.scrolled {

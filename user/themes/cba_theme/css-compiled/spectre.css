@@ -533,14 +533,14 @@ kbd {
   border-radius: 0.1rem;
   line-height: 1.2;
   padding: 0.1rem 0.15rem;
-  background: #454d5d;
-  color: #fff;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
   font-size: 0.7rem;
 }
 
 mark {
-  background: #ffe9b3;
-  color: #50596c;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
   border-radius: 0.1rem;
   padding: 0.05rem;
 }
@@ -1313,42 +1313,56 @@ input:disabled + .form-icon, input.disabled + .form-icon {
   border-radius: 0.1rem;
   line-height: 1.2;
   padding: 0.1rem 0.15rem;
-  background: #f0f1f4;
-  color: #5b657a;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
   display: inline-block;
 }
 .label.label-rounded {
   border-radius: 5rem;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+  padding: 1.4rem;
+  -webkit-transition: all 0.15s ease-in-out;
+  /* Safari */
+  transition: all ease-in-out 0.15s;
+  margin-right: -12px;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.label:hover {
+  padding: 2rem;
+  -webkit-transition: all 0.15s ease-in-out;
+  /* Safari */
+  transition: all ease-in-out 0.25s;
+  margin-right: -24px;
+  margin-left: -12px;
+  margin-top: -12px;
 }
 .label.label-primary {
-  background: #ff8c00;
-  color: #fff;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
 }
 .label.label-secondary {
-  background: #ffe2bf;
-  color: #ff8c00;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
 }
 .label.label-success {
-  background: #32b643;
-  color: #fff;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
 }
 .label.label-warning {
-  background: #ffb700;
-  color: #fff;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
 }
 .label.label-error {
-  background: #e85600;
-  color: #fff;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
 }
 
 code {
   border-radius: 0.1rem;
   line-height: 1.2;
   padding: 0.1rem 0.15rem;
-  background: #fdf4f4;
-  color: #e06870;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
   font-size: 85%;
 }
 

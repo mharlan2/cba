@@ -4,17 +4,28 @@
 
 {% block content %}
 
-{{ page.content }}
 
-		<div class ="one-columnimages">
+<div id="projpcontainer">
+
+  <div id="projpleft">
     {% for image in page.media.images %}
+
+    
+    <div class="hideme">
          <a href="{{ image.url(false) }}">
            <img src="{{ image.url }}"/>
         </a>
-    {% endfor %}
     </div>
+   
+    {% endfor %}
+  </div>
+
     
-        <div id="relatedcontainer">
+  <div id="projpright">
+      
+    
+      {{ page.content }}
+      <div id="relatedcontainer">
       <ul>
       {% set random_related = related.random(2) %}
         {% for page in random_related %}
@@ -28,5 +39,30 @@
         {% endfor %}
       </ul>
       </div>
+  </div>
+  
 
+</div>
+
+
+<script>
+jQuery(document).ready(function($) {
+  $('#projpright').hcSticky({
+    stickTo: '#projpcontainer'
+  });
+
+    $(window).scroll( function(){
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            if( bottom_of_window > bottom_of_object){
+                $(this).addClass('showme');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('showme');
+            }
+        });
+    });
+});
+</script>
 {% endblock %}

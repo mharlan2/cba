@@ -6,6 +6,7 @@
 }
 
 @mixin label-variant($color: $light-color, $bg-color: $primary-color) {
-  background: $bg-color;
-  color: $color;
+  background: linear-gradient(90deg, #f39550, #e7574d);
+  color: white;
+
 }
