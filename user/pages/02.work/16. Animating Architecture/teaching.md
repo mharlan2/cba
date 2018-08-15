@@ -3,8 +3,7 @@ title: 'Animating Architecture'
 menu: 'Animating Architecture'
 taxonomy:
     category: work
-    tag:
-        - teaching
+    tag: [teaching]
 content:
     items: '@self.siblings'
 ---

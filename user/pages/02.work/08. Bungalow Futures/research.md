@@ -3,8 +3,7 @@ title: 'Bungalow Futures'
 menu: 'Bungalow Futures'
 taxonomy:
     category: work
-    tag:
-        - thinking
+    tag: [thinking]
 content:
     items: '@self.siblings'
 ---

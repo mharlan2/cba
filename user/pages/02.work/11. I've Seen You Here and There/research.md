@@ -3,8 +3,7 @@ title: 'I''ve Seen You Here and There'
 menu: 'I''ve Seen You Here and There'
 taxonomy:
     category: work
-    tag:
-        - thinking
+    tag: [thinking]
 content:
     items: '@self.siblings'
 ---

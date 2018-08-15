@@ -3,8 +3,7 @@ title: 'Oscar Upon a Time'
 menu: 'Oscar Upon a Time'
 taxonomy:
     category: work
-    tag:
-        - thinking
+    tag: [thinking]
 content:
     items: '@self.siblings'
 ---

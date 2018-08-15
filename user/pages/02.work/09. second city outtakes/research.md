@@ -3,8 +3,7 @@ title: 'Second City Outtakes'
 menu: 'Second City Outtakes'
 taxonomy:
     category: work
-    tag:
-        - thinking
+    tag: [thinking]
 content:
     items: '@self.siblings'
 ---

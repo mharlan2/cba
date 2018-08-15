@@ -1,12 +1,11 @@
 ---
-title: 'Home, Sweet Library'
-menu: 'Home, Sweet Library'
+title: Home, Sweet Library
+menu: Home, Sweet Library
 taxonomy:
     category: work
-    tag:
-        - teaching
+    tag: [teaching]
 content:
-    items: '@self.siblings'
+	items: '@self.siblings'
 ---
 
 ## Home, Sweet Library

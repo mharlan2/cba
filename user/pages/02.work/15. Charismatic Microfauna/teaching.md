@@ -3,8 +3,7 @@ title: 'Charismatic Microfauna: Critters Got Skin in the Game'
 menu: 'Charismatic Microfauna'
 taxonomy:
     category: work
-    tag:
-        - teaching
+    tag: [teaching]
 content:
     items: '@self.siblings'
 ---

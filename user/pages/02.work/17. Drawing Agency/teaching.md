@@ -1,12 +1,11 @@
 ---
-title: 'Drawing Agency'
-menu: 'Drawing Agency'
+title: Drawing Agency
+menu: Drawing Agency
 taxonomy:
     category: work
-    tag:
-        - teaching
+    tag: [teaching]
 content:
-    items: '@self.siblings'
+	items: '@self.siblings'
 ---
 
 ## Drawing Agency
