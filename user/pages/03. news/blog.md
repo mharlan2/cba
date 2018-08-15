@@ -4,4 +4,4 @@ menu: News
 content:
     items: '@self.children'
 ---
-# Could be Blog
+# News

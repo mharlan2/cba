@@ -3,17 +3,18 @@
 {% set related = page.collection() %}
 
 {% block content %}
+<div id="projpcontainer">
+  <div id="projpleft">
+    {% for image in page.media.images %}
 
-{{ page.content }}
-    <div class ="one-columnimages">
-		{% for image in page.media.images %}
-   			 <a href="{{ image.url(false) }}">
-     			 <img src="{{ image.url }}"/>
-   			</a>
-		{% endfor %}
-    </div>
-    	
+         <a href="{{ image.url(false) }}">
+           <img src="{{ image.url }}"/>
+        </a>
+    {% endfor %} 
+    {{ page.content }}
+
      <div id="relatedcontainer">
+      <p> Related Work </p>
       <ul>
       {% set random_related = related.random(2) %}
         {% for page in random_related %}
@@ -26,6 +27,14 @@
         </li>
         {% endfor %}
       </ul>
+    </div>
       </div>
-
+</div>
+<script>
+jQuery(document).ready(function($) {
+  $('#projpright').hcSticky({
+    stickTo: '#projpcontainer'
+  });
+  });
+</script>
 {% endblock %}

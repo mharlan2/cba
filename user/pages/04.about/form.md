@@ -1,60 +1,39 @@
 ---
 title: About
 menu: About
-form:
-    name: contact
-    fields:
-        -
-            name: name
-            label: Name
-            placeholder: 'Enter your name'
-            autocomplete: 'on'
-            type: text
-            validate:
-                required: true
-        -
-            name: email
-            label: Email
-            placeholder: 'Enter your email address'
-            type: email
-            validate:
-                required: true
-        -
-            name: message
-            label: Message
-            placeholder: 'Enter your message'
-            type: textarea
-            validate:
-                required: true
-    buttons:
-        -
-            type: submit
-            value: Submit
-        -
-            type: reset
-            value: Reset
+
 ---
 
-![](couldbearchitecturelogo.png?classes=fullwidthimg)
+## Could Be Architecture is the design practice of Joseph Altshuler and Zack Morrison that takes pleasure in projecting what the world could be.
 
-**Could Be Architecture is the design practice of Joseph Altshuler and Zack Morrison that takes pleasure in projecting what the world could be.**
+"Could Be Architecture is a Chicago-based design practice directed by Joseph Altshuler and Zack Morrison. We design seriously playful spaces, things, and happenings that celebrate what your world could be.
 
-We work at all scales of the designed and built environment. We believe that architecture enacts its greatest potential when it builds audiences that didn't previously exist; when it communicates a story, resonates with people's emotions, and instigates enthusiasm around the activities and aesthetics that it stages. We're invested in architecture that might be playfully sincere and seriously funny. We enjoy eyeing the everyday, drawing details, and strategizing scenarios. 
+We work across scales, including designs for buildings, interiors, installations, scenographies, exhibits, and publications. We are practitioners and academics, equally invested in built pragmatics and speculative research. We are also citizens and artists, committed at once to public engagement and aesthetic ambitions. Through our work, we aim to create architecture that tells stories, builds audiences, resonates with people’s emotions, and instigates enthusiasm around the activities and imagery that it stages. Fueled by a collaborative adventure with clients, consultants, and colleagues, we position architecture as an active character in the world, enacting a future full of wonder, humor, color, and delight."
 
-We're interested in borrowing familiar forms from our surroundings to unlock their latent potentials, and in coupling forms and graphics to propel performance and conjure meaning. Fueled by a collaborative adventure with clients, consultants and colleagues, our designs deliver objects and spaces of desire, both built and speculative, endowed with dreamy but calculated optimism. By positioning architecture as an active character in the world, we envision a future full of surprise, wonder, and delight.
+## Our Services
 
-## Team
-<div id="teamcontainer">
-  <div class="teammember">
-  <h4>Zack</h4>
-<img src="/user/pages/04.about/zack.jpg">
-Integer mattis arcu nec eros aliquam, sit amet laoreet velit suscipit. Ut non magna volutpat, sodales tellus faucibus, rutrum quam. Duis eros nisl, lacinia eget volutpat eget, interdum ut magna. Proin eu porta ipsum. Nulla leo nulla, malesuada vitae lectus sit amet, pulvinar interdum ex. Fusce ligula odio, suscipit quis turpis eu, condimentum tempus arcu. Cras lorem nisl, accumsan nec sem at, condimentum molestie mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-  </div>
+#### buildings, interiors, signage, spaces, publics spaces, environments, urban scenarios, exhibits, installations, graphics, publications, happenings, furniture
+
+<h2 style="text-align:center"> Who is Could Be Architecture?</h2>
+</br>
+<div class="teamcontainer">
+    <div class="teammember">
+        <img src="/user/pages/04.about/joseph.jpg">
+    </div>
 <div class="teammember">
-  <h4>Joseph</h4>
-<img src="/user/pages/04.about/joseph.jpg">
-Mauris sollicitudin arcu sed felis rutrum auctor. Vestibulum luctus, nunc nec varius sodales, nunc lorem tincidunt enim, id ultrices ante mi id risus. Proin suscipit dictum ipsum. Nulla consequat tellus justo, vitae fermentum risus laoreet a. Suspendisse potenti. Vivamus vitae risus sit amet eros fringilla sagittis id ac ligula. Fusce purus justo, elementum quis leo in, rutrum egestas orci. Proin dictum lacus in sollicitudin posuere.
+  <h4 >Joseph Altshuler and Zack Morrison</h4>
+<p>Joseph Altshuler and Zack Morrison are architectural designers, educators, curators, and writers. Collectively, they offer over a decade of experience working on residential, commercial, and institutional projects. Joseph teaches at the School of the Art Institute of Chicago and the Illinois Institute of Technology, and both Zack and Joseph were teaching fellows at the 2017 Critical Practice Studio at Lawrence Technological University. Their writing has been published widely in journals including Log, MAS Context, Pidgin, and Plat, and they regularly contribute to the Architect’s Newspaper. Both partners hold Master of Architecture degrees from Rice University.</p>
   </div>
 </div>
 
-## Contact 
+<h2 style="text-align:center">Team Members</h2>
+<div class="teamcontainer">
+     <div class="teammember">
+        <img src="/user/pages/04.about/joseph.jpg">
+    </div>
+<div class="teammember">
+<h4 >Intern Name</h4>
+<p>Mauris sollicitudin arcu sed felis rutrum auctor. Vestibulum luctus, nunc nec varius sodales, nunc lorem tincidunt enim, id ultrices ante mi id risus. Proin suscipit dictum ipsum. Nulla consequat tellus justo, vitae fermentum risus laoreet a. Suspendisse potenti. Vivamus vitae risus sit amet eros fringilla sagittis id ac ligula. Fusce purus justo, elementum quis leo in, rutrum egestas orci. Proin dictum lacus in sollicitudin posuere.</p>
+</div>
+</div>
+</br>

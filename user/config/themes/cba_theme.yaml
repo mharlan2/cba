@@ -1,0 +1,18 @@
+enabled: true
+production-mode: true
+grid-size: grid-xl
+header-fixed: true
+header-animated: false
+header-dark: false
+header-transparent: true
+sticky-footer: true
+blog-page: /blog
+spectre:
+  exp: false
+  icons: false
+streams:
+  scheme:
+    theme:
+      type: ReadOnlyStream
+      paths:
+        - user/themes/cba_theme

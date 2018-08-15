@@ -20,7 +20,7 @@
 
 
   {{ instagram_feed() }}
-  
+
     
     {% for page in page.collection %}
 
@@ -36,9 +36,9 @@
                 {{first_image.thumbnail('page').html}}
             {% endif %}
 
-             <div class="projtitle">
-                    <a href="{{ page.url }}">{{page.menu}}</a>
-                </div>
+          
+                    <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+            
        
             </div>
         {% endif %}
@@ -49,6 +49,138 @@
 	
 	</div>
 
+
+
+<!--<svg id="line" x="0px" y="0px"
+   width="1400px" height="1000px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
+  <path id ="lineA" opacity = "1" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M61,500c0,0,264.499,0,628.5,0s649.5,0,649.5,0"/>
+  <path id ="lineB" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="638.01,891.38 520.1,853.07 419.8,780.2 346.92,679.9 308.61,561.99 308.61,438.01 346.92,320.1 419.8,219.8 520.1,146.93 638.01,108.62 761.99,108.62 879.9,146.93 980.2,219.8 1053.08,320.1 1091.39,438.01 1091.39,561.99 1053.08,679.9 980.2,780.2 879.9,853.07 761.99,891.38 "/>
+  <path id ="lineC" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="394,806 1006,806 1006,194 394,194 394,806 "/>
+  <path id ="lineD" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="477.61,842.23 340.16,419.21 700,157.77 1059.84,419.21 922.39,842.23 477.61,842.23"/>
+  <path id ="lineE" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="344.93,807.5 700,192.5 1055.07,807.5 344.93,807.5 "/>
+  <path id ="lineF" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="268,144.5 268,855.5 484,144.5 484,855.5 700,144.5 700,855.5 916,144.5 916,855.5 1132,144.5 1132,855.5 "/>
+  <path id ="lineG" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="769.12,434.27 992.78,434.27 811.83,565.73 880.95,778.45 700,646.98 519.05,778.45 588.17,565.73 407.22,434.27 630.88,434.27 700,221.55 769.12,434.27 "/>
+  <path id ="lineH" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="1172.5,212 227.5,212 227.5,356 1172.5,356 1172.5,500 227.5,500 227.5,644 1172.5,644 1172.5,788 227.5,788 "/>
+  <path id ="lineI" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="700,169.07 223,500 700,830.93 1177,500 "/>
+  <path id ="lineJ" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="340,860 340,716 484,716 484,572 628,572 628,428 772,428 772,284 916,284 916,140 1060,140 "/>
+  <path id ="lineK" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="564.38,577.73 857,794 1163,488 857,182 564.38,398.27 398,299 209,488 398,677 564.38,577.73 "/>
+  <path id ="lineL" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="1084.38,470 908.69,774.3 557.31,774.3 381.62,470 557.31,165.7 908.69,165.7 1084.38,470 "/>
+  <path id ="lineM" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="380.5,436.1 636.1,436.1 636.1,180.5 763.9,180.5 763.9,436.1 1019.5,436.1 1019.5,563.9 763.9,563.9 763.9,819.5 636.1,819.5 636.1,563.9 380.5,563.9 380.5,436.1 "/>
+  <path id ="lineN" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="182.5,158 326.5,662 389.5,158 461.5,842 983.5,257 641.5,275 794.5,698 1217.5,509 "/>
+  <path id ="lineO" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="196,104 196,248 556,248 556,536 196,536 196,896 1204,896 1204,761 844,761 844,248 1204,248 1204,104 196,104 "/>
+  <path id ="lineP" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="808,392 808,176 376,176 376,608 592,608 592,824 1024,824 1024,392 808,392 "/>
+  <path id ="lineQ" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="1204,171.5 196,495.5 1204,828.5 "/>
+  <path id ="lineR" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="425.5,225.5 425.5,294.12 494.12,294.12 494.12,225.5 562.75,225.5 562.75,362.75 425.5,362.75 425.5,431.38 494.12,431.38 494.12,500 425.5,500 425.5,568.62 700,568.62 700,500 562.75,500 562.75,431.38 631.38,431.38 631.38,225.5 974.5,225.5 974.5,294.12 837.25,294.12 837.25,362.75 768.62,362.75 768.62,294.12 700,294.12 700,431.38 905.88,431.38 905.88,362.75 974.5,362.75 974.5,500 768.62,500 768.62,568.62 837.25,568.62 
+  837.25,637.25 768.62,637.25 768.62,705.88 700,705.88 700,637.25 631.38,637.25 631.38,705.88 562.75,705.88 562.75,637.25 425.5,637.25 425.5,705.88 494.12,705.88 494.12,774.5 837.25,774.5 837.25,705.88 905.88,705.88 905.88,774.5 974.5,774.5 974.5,637.25 905.88,637.25 905.88,568.62 974.5,568.62 "/>
+  <path id ="lineS" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="196,140 196,860 700,572 1204,860 1204,140 700,428 "/>
+  <path id ="lineT" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="224,188 584,188 800,611 800,404 872,404 872,548 944,548 944,404 1160,404 1160,764 224,764 "/>
+  <path id ="lineU" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="1136,764 1064,692 1136,620 1064,548 1136,476 1064,404 1136,332 1064,260 1136,188 272,188 344,260 272,332 344,404 272,476 344,548 272,620 344,692 272,764 "/>
+  <path id ="lineV" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="184,188 1192,836 184,836 1192,188 "/>
+  <path id ="lineW" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="700,500 772,500 700,428 628,500 700,572 700,644 844,500 700,347 556,500 484,500 700,716 916,500 700,284 700,212 412,500 700,788 988,500 1060,500 700,140 340,500 700,860 700,932 1132,500 700,68 268,500 682,914 "/>
+  <path id ="lineX" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="592,140 160,860 1240,860 1087,140 "/>
+  <path id ="lineY" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="484,320 1060,320 1060,176 340,176 340,824 1060,824 1060,680 484,680 484,320 "/>
+  <path id ="lineZ" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" points="304,212 592,212 592,500 304,500 304,788 664,788 664,212 736,212 736,788 1096,788 1096,500 808,500 808,212 1096,212 "/>
+
+</svg>-->
+
+<svg id="line" x="0px" y="0px"
+   width="1400px" height="1000px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
+   <defs>
+   <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E7574D"/>
+      <stop offset="100%" stop-color="#ff8c00"/>
+    </linearGradient>
+  </defs>
+  <path id ="lineA" opacity = "1" stroke="url(#linear)" style="fill:none;stroke-width:6;stroke-miterlimit:10;" d="M61,500c0,0,264.499,0,628.5,0s649.5,0,649.5,0"/>
+</svg>
+<svg id="other" x="0px" y="0px"
+   width="1400px" height="1000px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
+  <path id ="lineB" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M700,100.42c216.705,0,392.38,182.875,392.38,399.58
+  c0,216.705-175.675,392.38-392.38,392.38S307.62,716.705,307.62,500c0-216.706,175.675-387.338,392.38-387.338"/>
+  <path id ="lineC" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M394,806h512c55.229,0,100-44.771,100-100V294
+  c0-55.229-44.771-100-100-100H394V806"/>
+  <path id ="lineD" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M471.43,823.209L346.341,438.231
+  c-3.414-10.505,1.063-24.284,10-30.777L683.82,169.526c8.936-6.493,23.424-6.493,32.361,0l327.479,237.928
+  c8.937,6.493,13.413,20.272,10,30.777L928.57,823.209c-3.414,10.506-15.135,19.021-26.181,19.021H497.61
+  C486.564,842.23,474.843,833.715,471.43,823.209z"/>
+  <path id ="lineE" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M354.93,790.18L690,209.82
+  c5.523-9.565,14.478-9.565,20,0l335.07,580.359c5.522,9.565,1.046,17.32-10,17.32H364.93
+  C353.884,807.5,349.407,799.745,354.93,790.18z"/>
+  <path id ="lineF" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M268,144.5v681c0,16.568,3.904,17.148,8.72,1.295
+  l198.56-653.59c4.816-15.853,8.72-15.273,8.72,1.295v651c0,16.568,3.904,17.148,8.72,1.295l198.56-653.59
+  c4.816-15.853,8.72-15.273,8.72,1.295v651c0,16.568,3.904,17.148,8.721,1.295l198.559-653.59c4.816-15.853,8.721-15.273,8.721,1.295
+  v651c0,16.568,3.904,17.148,8.721,1.295l198.559-653.59c4.816-15.853,8.721-15.273,8.721,1.295v681"/>
+  <path id ="lineG" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M777.387,867.627
+  c25.795-5.863,32.131-67.106,55.403-78.333c23.655-11.413,75.465,21.684,95.784,5.459c20.418-16.304-0.387-74.204,15.918-94.623
+  c16.225-20.319,77.327-12.853,88.739-36.509c11.228-23.271-32.574-66.353-26.712-92.146c5.679-24.981,63.98-44.774,63.98-71.475
+  s-58.302-46.493-63.98-71.474c-5.863-25.795,37.939-68.877,26.712-92.149c-11.413-23.656-72.516-16.189-88.74-36.508
+  c-16.304-20.418,4.501-78.318-15.919-94.622c-20.318-16.225-72.127,16.871-95.783,5.459c-23.271-11.228-29.608-72.47-55.402-78.333
+  C752.405,126.694,720.2,179,693.5,179s-58.906-52.306-83.887-46.627c-25.794,5.863-32.13,67.106-55.402,78.333
+  c-23.656,11.413-75.466-21.684-95.785-5.458c-20.418,16.304,0.386,74.203-15.918,94.622c-16.225,20.319-77.327,12.854-88.739,36.509
+  c-11.228,23.272,32.575,66.353,26.711,92.147C374.802,453.507,316.5,473.3,316.5,500"/>
+  <path id ="lineH" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M1172.5,212h-905c-22.091,0-40,17.909-40,40v64
+  c0,22.091,17.909,40,40,40h865c22.092,0,40,17.909,40,40v64c0,22.091-17.908,40-40,40h-865c-22.091,0-40,17.908-40,40v64
+  c0,22.092,17.909,40,40,40h865c22.092,0,40,17.908,40,40v64c0,22.092-17.908,40-40,40h-905"/>
+  <path id ="lineI" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M675.351,186.17L247.649,482.899
+  c-13.613,9.444-13.613,24.757,0,34.201l427.702,296.729c13.613,9.444,35.685,9.444,49.297,0l427.703-296.729
+  c13.613-9.444,13.613-24.757,0-34.201L724.648,186.17C711.036,176.726,688.964,176.726,675.351,186.17z"/>
+  <path id ="lineJ" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M918.25,860c78.286,0,141.75-63.464,141.75-141.75
+  V140H916v144H772v144H628v144H484v144H340v144H918.25z"/>
+  <path id ="lineK" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M1158.335,217.039l-0.002-0.003
+  c5.211-4.3,8.925-10.455,10.028-17.659c2.383-15.559-8.298-30.103-23.856-32.486c-7.274-1.114-14.326,0.628-20.018,4.389
+  l-0.001-0.001c-44.953,29.682-102.757,31.252-149.205,4.301c-34.323-21.34-73.429-36.245-115.906-42.751
+  c-97.238-14.894-190.811,17.43-257.418,79.86c-68.996,63.792-179.972,43.99-222.571-39.921l-0.008,0.019
+  c-10.864-21.363-31.495-37.369-56.993-41.275c-42.036-6.438-81.332,22.418-87.771,64.454c-6.438,42.036,22.419,81.332,64.455,87.771
+  c10.615,1.626,21.054,0.995,30.834-1.525c91.263-22.178,178.536,48.998,175.075,142.93c-0.413,10.155-0.323,20.237,0.254,30.221
+  c2.632,79.082-60.147,145.153-139.451,146.369c-65.34-0.06-122.708,47.588-132.904,114.154
+  c-11.247,73.426,39.16,142.066,112.586,153.312c62.585,9.587,121.685-25.624,144.739-81.698
+  c31.257-72.318,115.425-105.116,187.197-73.463c27.312,13.347,57.079,22.847,88.712,27.692
+  c168.143,25.754,325.327-89.675,351.082-257.818c6.6-43.091,3.907-85.456-6.549-125.08
+  C1098.289,306.414,1116.695,251.419,1158.335,217.039z"/>
+  <path id ="lineL" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M1074.38,487.32L918.69,756.979
+  c-5.522,9.565-18.954,17.32-30,17.32H577.31c-11.046,0-24.477-7.755-30-17.32L391.62,487.32c-5.523-9.565-5.523-25.075,0-34.641
+  L547.31,183.021c5.523-9.565,18.954-17.32,30-17.32H888.69c11.046,0,24.478,7.755,30,17.32L1074.38,452.68
+  C1079.902,462.245,1079.902,477.755,1074.38,487.32z"/>
+  <path id ="lineM" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M304,212c96.5,0,288,0,288,0v288H304v288h360V212
+  c0,0,17.552,0,36.5,0s35.5,0,35.5,0v576h360V500H808V212c0,0,184.5,0,288,0"/>
+  <path id ="lineN" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M390.5,436.1h235.6c5.523,0,10-4.477,10-10V190.5
+  c0-5.523,4.477-10,10-10H753.9c5.522,0,10,4.477,10,10v235.6c0,5.523,4.478,10,10,10h235.6c5.522,0,10,4.477,10,10V553.9
+  c0,5.522-4.478,10-10,10H773.9c-5.522,0-10,4.478-10,10v235.6c0,5.522-4.478,10-10,10H646.1c-5.523,0-10-4.478-10-10V573.9
+  c0-5.522-4.477-10-10-10H390.5c-5.523,0-10-4.478-10-10V446.1C380.5,440.577,384.977,436.1,390.5,436.1z"/>
+  <path id ="lineO" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M182.5,158c0,0,20,505.5,144,504s-99-487.5,63-504
+  s72,684,72,684s459-916.5,522-585s-239-71.5-342,18c-95.937,83.363-44,403.5,153,423s321-132.5,406-248.5"/>
+  <path id ="lineP" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M484,320h576V176H340v648h720V680H484
+  c0,0,0-115,0-180C484,435,484,320,484,320z"/>
+  <path id ="lineQ" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M196,104v134c0,5.523,4.477,10,10,10h340
+  c5.523,0,10,4.477,10,10v268c0,5.522-4.477,10-10,10H206c-5.523,0-10,4.478-10,10v340c0,5.522,4.477,10,10,10h988
+  c5.522,0,10-4.478,10-10V771c0-5.522-4.478-10-10-10H854c-5.522,0-10-4.478-10-10V258c0-5.523,4.478-10,10-10h340
+  c5.522,0,10-4.477,10-10V114c0-5.523-4.478-10-10-10H196z"//>
+  <path id ="lineR" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M808,382V186c0-5.523-4.478-10-10-10H386
+  c-5.523,0-10,4.477-10,10v412c0,5.522,4.477,10,10,10h196c5.523,0,10,4.478,10,10v196c0,5.522,4.477,10,10,10h412
+  c5.522,0,10-4.478,10-10V402c0-5.523-4.478-10-10-10H818C812.478,392,808,387.523,808,382z">
+  <path id ="lineS" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M340.284,591.056
+  c-39.799-13.046-68.543-50.493-68.543-94.653c0-44.264,28.878-81.782,68.821-94.745v-0.073l804.835-258.697v714.226L340.274,591.135
+  L340.284,591.056z"/>
+  <path id ="lineT" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M425.5,225.5v48.62c0,11.046,8.954,20,20,20h28.62 c11.046,0,20-8.954,20-20V245.5c0-11.046,8.954-20,20-20h28.63c11.046,0,20,8.954,20,20v97.25c0,11.046-8.954,20-20,20H445.5 c-11.046,0-20,8.954-20,20v28.63c0,11.046,8.954,20,20,20h28.62c11.046,0,20,8.954,20,20V480c0,11.046-8.954,20-20,20H445.5 c-11.046,0-20,8.954-20,20v28.62c0,11.046,8.954,20,20,20H680c11.046,0,20-8.954,20-20V520c0-11.046-8.954-20-20-20h-97.25 c-11.046,0-20-8.954-20-20v-28.62c0-11.046,8.954-20,20-20h28.63c11.046,0,20-8.954,20-20V245.5c0-11.046,8.954-20,20-20H954.5 c11.046,0,20,8.954,20,20v28.62c0,11.046-8.954,20-20,20h-97.25c-11.046,0-20,8.954-20,20v28.63c0,11.046-8.954,20-20,20h-28.63 c-11.046,0-20-8.954-20-20v-28.63c0-11.046-8.954-20-20-20H720c-11.046,0-20,8.954-20,20v97.26c0,11.046,8.954,20,20,20h165.88 c11.046,0,20-8.954,20-20v-28.63c0-11.046,8.954-20,20-20h28.62c11.046,0,20,8.954,20,20V480c0,11.046-8.954,20-20,20H788.62 c-11.046,0-20,8.954-20,20v28.62c0,11.046,8.954,20,20,20h28.63c11.046,0,20,8.954,20,20v28.63c0,11.046-8.954,20-20,20h-28.63 c-11.046,0-20,8.954-20,20v28.63c0,11.046-8.954,20-20,20H720c-11.046,0-20-8.954-20-20v-28.63c0-11.046-8.954-20-20-20h-28.62
+  c-11.046,0-20,8.954-20,20v28.63c0,11.046-8.954,20-20,20h-28.63c-11.046,0-20-8.954-20-20v-28.63c0-11.046-8.954-20-20-20H445.5 c-11.046,0-20,8.954-20,20v28.63c0,11.046,8.954,20,20,20h28.62c11.046,0,20,8.954,20,20v28.62c0,11.046,8.954,20,20,20h303.13 c11.046,0,20-8.954,20-20v-28.62c0-11.046,8.954-20,20-20h28.63c11.046,0,20,8.954,20,20v28.62c0,11.046,8.954,20,20,20h28.62 c11.046,0,20-8.954,20-20v-97.25c0-11.046-8.954-20-20-20h-28.62c-11.046,0-20-8.954-20-20v-28.63c0-11.046,8.954-20,20-20h48.62"/>
+  <path id ="lineU" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M196,160v680c0,11.046,5.135,12.664,11.469,3.615
+  l481.062-687.23c6.334-9.049,16.604-9.049,22.938,0l481.062,687.23c6.334,9.049,11.469,7.431,11.469-3.615V160
+  c0-11.046-5.135-12.665-11.469-3.615l-481.062,687.23c-6.334,9.049-16.604,9.049-22.938,0l-481.062-687.23
+  C201.135,147.335,196,148.954,196,160z"/>
+  <path id ="lineV" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M1160,457.201V754c0,5.522-4.478,10-10,10H234
+  c-5.523,0-10-4.478-10-10V198c0-5.523,2.611-6.363,5.849-1.889C398.575,429.255,659.946,717.654,950.5,652.5
+  c141.281-31.682,194.216-159.625,206.516-195.755C1158.795,451.517,1160,451.678,1160,457.201z"/>
+  <path id ="lineW" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M1136,764l-72-72l72-72l-72-72l72-72l-72-72l72-72
+  l-72-72l72-72c0,0-224.5,0-436,0s-428,0-428,0l72,72l-72,72l72,72l-72,72l72,72l-72,72l72,72l-72,72"/>
+  <path id ="lineX" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M184,188c0,0,351.542,225.991,504,324
+  s504,324,504,324H184c0,0,451.53-290.27,504-324s504-324,504-324"/>
+  <path id ="lineY" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M1272,500c0,157.953-128.047,286-286,286
+  S700,657.953,700,500c0-157.954-128.046-286-286-286S128,342.046,128,500"/>
+  <path id ="lineZ" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M1116.416,278.43
+  c-9.49,2.007-19.328,3.07-29.416,3.07c-78.148,0-141.5-63.352-141.5-141.5H592L160,860h1080L1116.416,278.43z"/>
+
+</svg>
+
 	<script>
 
     function getRandomInt(min, max) {
@@ -56,6 +188,7 @@
   }
 
 
+var $grid = $('.grid').imagesLoaded( function() {
   $('.grid-item').each(function(){
     if (getRandomInt(0,10) <= 3) {
         $(this).addClass('large');
@@ -65,20 +198,223 @@
         $(this).css({'marginTop' : getRandomInt(-40,40), 'marginLeft' : getRandomInt(-40,40)});
       });
 
-      var $grid = $('.grid').masonry({
-      });
+  $grid.masonry({
 
-      $grid.imagesLoaded().progress( function() {
-  		$grid.masonry('layout');
-
- 
-
-
-
+  });
+});
   
+  </script>
+
+  <script>
+    var svg = document.getElementById("#line");
+
+    
+    var s = Snap(svg);
+    var lineA = Snap.select('#lineA');
+    var lineB = Snap.select('#lineB');
+    var lineC = Snap.select('#lineC');
+    var lineD = Snap.select('#lineD');
+    var lineE = Snap.select('#lineE');
+    var lineF = Snap.select('#lineF');
+    var lineG = Snap.select('#lineG');
+    var lineH = Snap.select('#lineH');
+    var lineI = Snap.select('#lineI');
+    var lineJ = Snap.select('#lineJ');
+    var lineK = Snap.select('#lineK');
+    var lineL = Snap.select('#lineL');
+    var lineM = Snap.select('#lineM');
+    var lineN = Snap.select('#lineN');
+    var lineO = Snap.select('#lineO');
+    var lineP = Snap.select('#lineP');
+    var lineQ = Snap.select('#lineQ');
+    var lineR = Snap.select('#lineR');
+    var lineS = Snap.select('#lineS');
+    var lineT = Snap.select('#lineT');
+    var lineU = Snap.select('#lineU');
+    var lineV = Snap.select('#lineV');
+    var lineW = Snap.select('#lineW');
+    var lineX = Snap.select('#lineX');
+    var lineY = Snap.select('#lineY');
+    var lineZ = Snap.select('#lineZ');
+   
+    var lineApoints = lineA.node.getAttribute('d');
+    var lineBpoints = lineB.node.getAttribute('d');
+    var lineCpoints = lineC.node.getAttribute('d');
+    var lineDpoints = lineD.node.getAttribute('d');
+    var lineEpoints = lineE.node.getAttribute('d');
+    var lineFpoints = lineF.node.getAttribute('d');
+    var lineGpoints = lineG.node.getAttribute('d');
+    var lineHpoints = lineH.node.getAttribute('d');
+    var lineIpoints = lineI.node.getAttribute('d');
+    var lineJpoints = lineJ.node.getAttribute('d');
+    var lineKpoints = lineK.node.getAttribute('d');
+    var lineLpoints = lineL.node.getAttribute('d');
+    var lineMpoints = lineM.node.getAttribute('d');
+    var lineNpoints = lineN.node.getAttribute('d');
+    var lineOpoints = lineO.node.getAttribute('d');
+    var linePpoints = lineP.node.getAttribute('d');
+    var lineQpoints = lineQ.node.getAttribute('d');
+    var lineRpoints = lineR.node.getAttribute('d');
+    var lineSpoints = lineS.node.getAttribute('d');
+    var lineTpoints = lineT.node.getAttribute('d');
+    var lineUpoints = lineU.node.getAttribute('d');
+    var lineVpoints = lineV.node.getAttribute('d');
+    var lineWpoints = lineW.node.getAttribute('d');
+    var lineXpoints = lineX.node.getAttribute('d');
+    var lineYpoints = lineY.node.getAttribute('d');
+    var lineZpoints = lineZ.node.getAttribute('d');
+
+    function toDefault(){
+        lineA.animate({ d: lineApoints }, 400, mina.elastic)
+    }; 
+
+    
+
+var gridItemFunc = [
+    function() {lineA.animate({ d: lineBpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineCpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineDpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineEpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineFpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineGpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineHpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineIpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineJpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineKpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineLpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineMpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineNpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineOpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: linePpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineQpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineRpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineSpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineTpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineUpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineVpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineWpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineXpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineYpoints }, 400, mina.easeinout)},
+    function() {lineA.animate({ d: lineZpoints }, 400, mina.easeinout)}
+    ];  
+    
+
+
+    
+$( document ).ready(function() {
+
+var Sticky = new hcSticky('#sidebar', {
+  stickTo: '.grid'
 });
 
+Sticky.update({
+  top: 20
+});
+
+    var gridItem = document.getElementsByClassName("grid-item");
+    
+    for (var i = 0, len = gridItem.length; i < len; i++ ){
+      
+
+     // gridItem[i].addEventListener("mouseleave", function() { toDefault() } );  
+
+      gridItem[i].addEventListener("mouseenter", gridItemFunc[i % gridItemFunc.length] );
+      
+      
+    }
+});
+
+//    document.getElementById("zigzag").addEventListener("mouseenter", function(){ lineBf() });
+//    document.getElementById("zigzag").addEventListener("mouseleave", function(){ toDefault() });
+//    document.getElementById("octa").addEventListener("mouseenter", function(){ lineCf() });
+//    document.getElementById("octa").addEventListener("mouseleave", function(){ toDefault() });
+    
+//    function shapewrap() {
+ //   }
+//
+//    gridItem.forEach( function () {
+//    this.addEventListener("mouseleave", function(){ toDefault() } );
+//     
+//    });
+
+/*
+    var lineBf = function() {lineA.animate({ d: lineBpoints }, 400, mina.easeinout)};
+    var lineCf = function() {lineA.animate({ d: lineCpoints }, 400, mina.easeinout)};
+    var lineDf = function() {lineA.animate({ d: lineDpoints }, 400, mina.easeinout)};
+    var lineEf = function() {lineA.animate({ d: lineEpoints }, 400, mina.easeinout)};
+    var lineFf = function() {lineA.animate({ d: lineFpoints }, 400, mina.easeinout)};
+    var lineGf = function() {lineA.animate({ d: lineGpoints }, 400, mina.easeinout)};
+    var lineHf = function() {lineA.animate({ d: lineHpoints }, 400, mina.easeinout)};
+    var lineIf = function() {lineA.animate({ d: lineIpoints }, 400, mina.easeinout)};
+    var lineJf = function() {lineA.animate({ d: lineJpoints }, 400, mina.easeinout)};
+    var lineKf = function() {lineA.animate({ d: lineKpoints }, 400, mina.easeinout)};
+    var lineLf = function() {lineA.animate({ d: lineLpoints }, 400, mina.easeinout)};
+    var lineMf = function() {lineA.animate({ d: lineMpoints }, 400, mina.easeinout)};
+    var lineNf = function() {lineA.animate({ d: lineNpoints }, 400, mina.easeinout)};
+    var lineOf = function() {lineA.animate({ d: lineOpoints }, 400, mina.easeinout)};
+    var linePf = function() {lineA.animate({ d: linePpoints }, 400, mina.easeinout)};
+    var lineQf = function() {lineA.animate({ d: lineQpoints }, 400, mina.easeinout)};
+    var lineRf = function() {lineA.animate({ d: lineRpoints }, 400, mina.easeinout)};
+    var lineSf = function() {lineA.animate({ d: lineSpoints }, 400, mina.easeinout)};
+    var lineTf = function() {lineA.animate({ d: lineTpoints }, 400, mina.easeinout)};
+    var lineUf = function() {lineA.animate({ d: lineUpoints }, 400, mina.easeinout)};
+    var lineVf = function() {lineA.animate({ d: lineVpoints }, 400, mina.easeinout)};
+    var lineWf = function() {lineA.animate({ d: lineWpoints }, 400, mina.easeinout)};
+    var lineXf = function() {lineA.animate({ d: lineXpoints }, 400, mina.easeinout)};
+    var lineYf = function() {lineA.animate({ d: lineYpoints }, 400, mina.easeinout)};
+    var lineZf = function() {lineA.animate({ d: lineZpoints }, 400, mina.easeinout)};  
+
+var shapeFunc = [ lineBf(), lineCf(), lineDf(), lineEf(), lineFf(), lineGf(), lineHf(), lineIf(), lineJf(), lineKf(), lineLf(), lineMf(), lineNf(), lineOf(), linePf(), lineQf(), lineRf(), lineSf(), lineTf(), lineUf(), lineVf(), lineWf(), lineXf(), lineYf(), lineZf() ];
+
+ var shape = {
+    line1f : function() {lineA.animate({ d: lineBpoints }, 400, mina.easeinout)},
+    line2f : function() {lineA.animate({ d: lineCpoints }, 400, mina.easeinout)},
+    line3f : function() {lineA.animate({ d: lineDpoints }, 400, mina.easeinout)},
+    line4f : function() {lineA.animate({ d: lineEpoints }, 400, mina.easeinout)},
+    line5f : function() {lineA.animate({ d: lineFpoints }, 400, mina.easeinout)},
+    line6f : function() {lineA.animate({ d: lineGpoints }, 400, mina.easeinout)},
+    line7f : function() {lineA.animate({ d: lineHpoints }, 400, mina.easeinout)},
+    line8f : function() {lineA.animate({ d: lineIpoints }, 400, mina.easeinout)},
+    line9f : function() {lineA.animate({ d: lineJpoints }, 400, mina.easeinout)},
+    line10f : function() {lineA.animate({ d: lineKpoints }, 400, mina.easeinout)},
+    line11f : function() {lineA.animate({ d: lineLpoints }, 400, mina.easeinout)},
+    line12f : function() {lineA.animate({ d: lineMpoints }, 400, mina.easeinout)},
+    line13f : function() {lineA.animate({ d: lineNpoints }, 400, mina.easeinout)},
+    line14f : function() {lineA.animate({ d: lineOpoints }, 400, mina.easeinout)},
+    line15f : function() {lineA.animate({ d: linePpoints }, 400, mina.easeinout)},
+    line16f : function() {lineA.animate({ d: lineQpoints }, 400, mina.easeinout)},
+    line17f : function() {lineA.animate({ d: lineRpoints }, 400, mina.easeinout)},
+    line18f : function() {lineA.animate({ d: lineSpoints }, 400, mina.easeinout)},
+    line19f : function() {lineA.animate({ d: lineTpoints }, 400, mina.easeinout)},
+    line20f : function() {lineA.animate({ d: lineUpoints }, 400, mina.easeinout)},
+    line21f : function() {lineA.animate({ d: lineVpoints }, 400, mina.easeinout)},
+    line22f : function() {lineA.animate({ d: lineWpoints }, 400, mina.easeinout)},
+    line23f : function() {lineA.animate({ d: lineXpoints }, 400, mina.easeinout)},
+    line24f : function() {lineA.animate({ d: lineYpoints }, 400, mina.easeinout)},
+    line25f : function() {lineA.animate({ d: lineZpoints }, 400, mina.easeinout)},
+
+      }  
   
+    var svg = document.getElementById("#line");
+    var s = Snap(svg);
+    var lineA = Snap.select('#lineA');
+    var lineB = Snap.select('#lineB');
+
+    var lineApoints = lineA.node.getAttribute('d');
+    var lineBpoints = lineB.node.getAttribute('d');
+
+    var toFancy = function(){
+    lineA.animate({ d: lineBpoints }, 400, mina.easeinout, toSimple);  
+    }
+
+    var toSimple = function(){
+    lineA.animate({ d: lineApoints }, 400, mina.easeinout, toFancy); 
+    }
+
+    toSimple();
+*/
+   
+
   </script>
 
 {% endblock %}

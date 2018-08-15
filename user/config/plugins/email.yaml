@@ -4,9 +4,11 @@ to: matthewharlan@gmail.com
 mailer:
   engine: sendmail
   smtp:
-    server: localhost
-    port: 25
+    server: imap.1and1.com
+    port: 587
     encryption: none
+    user: matt@matthewharlan.com
+    password: Eph3m3ra
   sendmail:
     bin: '/usr/sbin/sendmail -bs'
 content_type: text/html

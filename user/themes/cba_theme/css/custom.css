@@ -10,8 +10,9 @@ html { overflow-y: scroll; }
 
 }
 
-body h1, h2, h3, h4, h5, h6, p, a {
+body h1, h2, h3, h4, h5, h6, p, a, blockquote{
 	font-family: gt_haptikmedium, Helvetica, Arial, sans-serif;
+
 }
 
 ul {
@@ -23,19 +24,41 @@ h1 {
 	font-size: 72px;
 }
 
+h3 {
+	line-height: 1.5;
+}
+
+blockquote{
+	font-size: 24px;
+}
 .grid {
-	margin-left:30px;
+	margin-left:80px;
+	-webkit-transition: opacity ease-in-out .25s; /* Safari */
+    transition: opacity .25s;
+}
+
+.grid:hover .grid-item {
+	opacity: .25;
+	-webkit-transition: opacity ease-in-out .25s; /* Safari */
+    transition: opacity .25s;
+}
+
+.grid .grid-item:hover {
+	opacity:1;
+	-webkit-transition: opacity ease-in-out .25s; /* Safari */
+    transition: opacity .25s;
+    z-index: 99;
 }
 
 .grid-item { 
 	position: absolute; 
 	z-index:1;
 	margin-bottom: 20px;
+	-webkit-transition: opacity ease-in-out .25s; /* Safari */
+    transition: opacity .25s;
+
 }	
 
-.grid-item:hover{
-	z-index: 99;	
-}
 
 .grid-item img{
 	opacity:1;
@@ -58,24 +81,52 @@ h1 {
 .grid-item:hover .gridoverlay{
 	opacity: .4;	
 }
-*/
+
 
 .grid-item:hover img{
 	opacity: .4;
-	z-index:9;
-	-webkit-transition: opacity ease-in-out .25s; /* Safari */
+	
+	-webkit-transition: opacity ease-in-out .25s; 
     transition: opacity .25s;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 
 }
 
-.grid-item:hover .projtitle a{
+*/
+
+.grid-item:hover a{
 	opacity:1;
 	cursor: pointer;
 	-webkit-transition: opacity .25s ease-in-out; /* Safari */
     transition: opacity ease-in-out .25s;
     transition-delay: .15s;
+}
+
+
+a.title{
+	display:inline-block;
+	position: absolute;
+	color: #000;
+  	text-align: center;
+  	text-decoration: underline;
+  	opacity:0;
+ 	z-index: 99;
+ 	-webkit-transition: opacity .25s ease-in-out; /* Safari */
+    transition: opacity ease-in-out .25s;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.insta a{
+	display: block;
+	opacity: 1 !important;
+	top: 0%;
+    left: 0%;
+    transform: translate( 0%, 0%);	
 }
 
 .one-columnimages{
@@ -101,7 +152,8 @@ h1 {
 	width:600px;
 	height: fit-content;
 	padding-left:50px;
-	padding-top:30px;
+
+	padding-top:0px;
 	margin-bottom:20px;
 }
 
@@ -125,13 +177,17 @@ h1 {
 	color:#ff8c00;
 }
 
-#teamcontainer {
+.teamcontainer {
 	display:flex;
 }
 
 .teammember {
 	width: 50%;
-	padding:20px;
+	padding-right:40px;
+}
+
+.teammember h4{
+	margin-top:0px;
 }
 
 .fullwidthimg {
@@ -171,21 +227,6 @@ h1 {
 	z-index:100;
 }
 
-.projtitle a{
-	position: absolute;
-	color: #000;
-  	text-align: center;
-  	text-decoration: underline;
-  	opacity:0;
- 	z-index: 99;
- 	-webkit-transition: opacity .25s ease-in-out; /* Safari */
-    transition: opacity ease-in-out .25s;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
 /*.projtitle a{
 	position: absolute;
@@ -254,15 +295,62 @@ h1 {
 }
 
 
-.sidebar-content {
-	position: fixed;
-    top: 120px;
-    left: 8%;
+#writingcontainer{
+	width:60%;
+	margin-left:20%;
+}
+
+#sidebar {
     z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    z-index:102;
 }
 
 .navbar {
 	z-index: 10;
+}
+
+@keyframes lineani{
+	from {transform: rotate(1deg) translate(-50%, -50%);}
+	to {transform: rotate(-1deg) translate(-50%, -50%);}
+}
+
+
+.logo svg{
+	left: 30px;
+    top: 80px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+#line {
+	position: fixed;
+	height:100%;
+	width:100%;
+	top: 50%;
+    left: 50%;
+    transform: rotate(1deg) translate(-50%, -50%);
+    
+    animation-name: lineani;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+}
+
+#other {
+	display:none;
+}
+
+
+@media only screen and (max-width:1300px) {
+
+.large {
+		width:300px;
+	}
 }
 
 
@@ -277,6 +365,16 @@ h1 {
 	width:100%;
 }
 
+.large {
+		width:200px;
+	}
+
+.small {
+	width:200px;
+	}
+
+}
+
 
 @media only screen and (max-width: 800px) {
 
@@ -285,6 +383,11 @@ h1 {
 		text-align:none;
 		position:relative;
 		font-size: 36px;
+	}
+
+	#writingcontainer{
+	width:100%;
+	margin-left:0%;
 	}
 
 	#projpcontainer {

@@ -4,7 +4,7 @@ html {
 }
 
 #body-wrapper .container {
-  padding: 2rem 0 2rem;
+  padding: 2rem 38px 2rem;
 }
 .header-fixed #body-wrapper {
   padding-top: 4rem;
@@ -462,7 +462,7 @@ form .form-input[type=range]:focus {
   border-bottom: none;
   font-size: 0.7rem;
   font-weight: 700;
-  background: #fff;
+  background: none !important;
   color: #454d5d;
 }
 #header a {
