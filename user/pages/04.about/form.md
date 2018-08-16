@@ -4,17 +4,41 @@ menu: About
 
 ---
 
-## Could Be Architecture is the design practice of Joseph Altshuler and Zack Morrison that takes pleasure in projecting what the world could be.
+<div id="about">
+<h2>Could Be Architecture is the design practice of Joseph Altshuler and Zack Morrison that takes pleasure in projecting what the world could be.</h2>
 
+<p>
 "Could Be Architecture is a Chicago-based design practice directed by Joseph Altshuler and Zack Morrison. We design seriously playful spaces, things, and happenings that celebrate what your world could be.
 
-We work across scales, including designs for buildings, interiors, installations, scenographies, exhibits, and publications. We are practitioners and academics, equally invested in built pragmatics and speculative research. We are also citizens and artists, committed at once to public engagement and aesthetic ambitions. Through our work, we aim to create architecture that tells stories, builds audiences, resonates with people’s emotions, and instigates enthusiasm around the activities and imagery that it stages. Fueled by a collaborative adventure with clients, consultants, and colleagues, we position architecture as an active character in the world, enacting a future full of wonder, humor, color, and delight."
+We work across scales, including designs for buildings, interiors, installations, scenographies, exhibits, and publications. We are practitioners and academics, equally invested in built pragmatics and speculative research. We are also citizens and artists, committed at once to public engagement and aesthetic ambitions. Through our work, we aim to create architecture that tells stories, builds audiences, resonates with people’s emotions, and instigates enthusiasm around the activities and imagery that it stages. Fueled by a collaborative adventure with clients, consultants, and colleagues, we position architecture as an active character in the world, enacting a future full of wonder, humor, color, and delight." </p>
 
-## Our Services
+<h2>Our Services</h2>
 
-#### buildings, interiors, signage, spaces, publics spaces, environments, urban scenarios, exhibits, installations, graphics, publications, happenings, furniture
+<div class="teamcontainer">
+<div class="teammember">
+	<ul> 
+		<li>buildings</li>
+		<li>interiors</li>
+		<li>signage</li>
+		<li>spaces</li>
+		<li>publics spaces</li>
+		<li>environments</li>
+		<li>urban scenarios</li>
+	</ul>
+</div>
+<div class="teammember">
+	<ul>
+		<li>exhibits</li>
+		<li>installations</li> 
+		<li>graphics</li>
+		<li>publications </li>
+		<li>happenings</li>
+		<li>furniture</li>
+	</ul>
+</div>
+</div>
 
-<h2 style="text-align:center"> Who is Could Be Architecture?</h2>
+<h2> Who is Could Be Architecture?</h2>
 </br>
 <div class="teamcontainer">
     <div class="teammember">
@@ -26,7 +50,7 @@ We work across scales, including designs for buildings, interiors, installations
   </div>
 </div>
 
-<h2 style="text-align:center">Team Members</h2>
+<h2>Team Members</h2>
 <div class="teamcontainer">
      <div class="teammember">
         <img src="/user/pages/04.about/joseph.jpg">
@@ -37,3 +61,4 @@ We work across scales, including designs for buildings, interiors, installations
 </div>
 </div>
 </br>
+</div>

@@ -18,9 +18,9 @@
       <ul>
       {% set random_related = related.random(2) %}
         {% for page in random_related %}
-          {% set first_image = page.media.images|first %}
+          {% set first_image = page.media.all|first %}
           <li><a href="{{ page.url }}">
-            {{first_image.thumbnail('page').display('thumbnail').resize(150, 75)}}
+            {{first_image.thumbnail('page').resize(150, 75)}}
 
           </a>
           <a href="{{ page.url }}">{{ page.title }}</a>

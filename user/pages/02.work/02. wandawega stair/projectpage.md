@@ -16,4 +16,4 @@ content:
 
 Architectural Design
 
-Nunc massa tellus, tempus vitae ante quis, scelerisque gravida lectus. Duis eleifend vulputate elit. Vestibulum semper urna lectus, quis suscipit ex dignissim nec. Maecenas sit amet vehicula sapien. Phasellus id eleifend ipsum, in sollicitudin erat. Morbi dapibus diam nec tortor eleifend, id efficitur lacus scelerisque. Nullam eu est tincidunt felis efficitur scelerisque finibus at dolor. Vivamus eu venenatis risus, ac commodo elit.
+This series of new staircase designs for an existing vacation home negotiate the small footprint between the first and second story. Each scheme articulates openness and presence at the same time.

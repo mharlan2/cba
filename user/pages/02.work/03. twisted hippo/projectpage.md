@@ -17,4 +17,4 @@ content:
 
 Architectural Design, Signage Design, Environmental Graphics, Construction Administration
 
-Vivamus sed maximus dolor. Proin ut est nec mi auctor venenatis vel ut risus. Morbi dignissim turpis odio, et varius felis bibendum non. Quisque congue dolor a lacus sagittis convallis. Morbi mauris quam, congue eget fringilla at, malesuada quis purus. Cras consectetur vestibulum turpis, at posuere velit interdum vel. Maecenas tempor viverra nibh quis feugiat.
+This exterior signage and interior design for Twisted Hippo Brewing creates a radical new identity for a existing taproom space. The design differentiates the existing loud and open interior into a series of more intimate "little worlds" that create small zones of specific seating, activity, and character. Bubbly wall and floor graphics articulate the 'Carbonated Cafe' up front; custom tables, planters, and scrim position the 'Communal Core' in the middle; and a custom-fabricated suspended felt cloud canopy shelters an intimate banquette and perfromance platform in the rear.

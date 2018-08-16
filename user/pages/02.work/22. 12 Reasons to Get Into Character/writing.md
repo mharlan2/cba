@@ -9,10 +9,6 @@ content:
     items: '@self.siblings'
 ---
 
-## 12 Reasons to Get Into Character (Log)
-#### Essay
-
-
 
 <h3>
 “While each project results in a distinctive aesthetic and program, each attests to a unanimous

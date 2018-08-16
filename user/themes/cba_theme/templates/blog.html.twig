@@ -15,9 +15,13 @@
     {% do assets.add('theme://js/bricklayer.min.js') %}
 {% endblock %}
 
+
 {% block hero %}
+    <!-- remove hero
     {% include 'partials/hero.html.twig' with {id: 'blog-hero', content: page.content, hero_image: blog_image} %}
+    -->
 {% endblock %}
+
 
 {% block body %}
     <section id="body-wrapper" class="section blog-listing">

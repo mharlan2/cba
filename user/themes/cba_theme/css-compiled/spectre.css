@@ -1922,14 +1922,14 @@ video.video-responsive::before {
     display: flex;
     flex: 1 0 0; */
   position: fixed;
-  transform: rotate(270deg);
-  left: 0px;
-  top: 140px;
+  transform: rotate(90deg);
+  top: -69px;
+  left: 169px;
 }
 .navbar .navbar-section:not(:first-child):last-child {
   justify-content: flex-end;
-  top: 250px;
-  left: -71px;
+  top: 342px;
+  left: -165px;
 }
 .navbar .navbar-center {
   align-items: center;

@@ -18,6 +18,6 @@ Collaborators: Popskull
 
 Exhibit and Installation Design, Public Space Design, Environmental Graphics
 
-Suspendisse lacinia ligula eu laoreet bibendum. In hac habitasse platea dictumst. Donec consectetur maximus neque et luctus. Donec urna tellus, sagittis vitae dapibus sed, suscipit sed augue. In ac odio purus. Etiam ac facilisis velit, eget pretium est. Ut neque arcu, tempor vitae volutpat eu, pulvinar in nisl. Nulla sagittis interdum ligula, at molestie nisl luctus iaculis. Morbi lobortis tincidunt massa, eu viverra tortor. Integer ut ex hendrerit, imperdiet dui eu, pharetra enim. Integer id urna blandit, eleifend nisl ut, porta lorem. Aenean sed mauris sed neque posuere efficitur.
+These public installation spaces make architectural space in around the forms of foam hands paraphernalia worn by sports fans. While typical foam hands are often limited to a "We're #1" finger gesture, the hand forms explored in this project ecompass a broad range of communicative hand gestures inspired by the emoji lexion. In one arena box, 'The Wobble Room,' visitors are invited to interact with and animate a series of life-size hand emoji forms, pushing them into friendly waves of greeting. In another room, 'The Handstand,' vistors can inhabit the hollowed-out interiors of the hand gesture forms, cuddling up into an intimate nook or resting on a shapely bench. Colorful graphics and shadow projections on the wall create of rich and immersive environment of hand-based visual communication.
 
 

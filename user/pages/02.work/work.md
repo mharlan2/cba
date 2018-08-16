@@ -9,5 +9,5 @@ content:
 	pagination: false
 ---
 
-![](cba_logo_grad.svg?style=width:70%;margin-left:15%;margin-bottom:10%)
+![](cba_logo_grad.svg?style=width:70%;margin-top:15%;margin-left:15%;margin-bottom:20%)
 
