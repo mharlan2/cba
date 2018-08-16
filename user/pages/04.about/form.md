@@ -42,7 +42,7 @@ We work across scales, including designs for buildings, interiors, installations
 </br>
 <div class="teamcontainer">
     <div class="teammember">
-        <img src="/user/pages/04.about/joseph.jpg">
+        <img src="{{ base_url }}/user/pages/04.about/joseph.jpg">
     </div>
 <div class="teammember">
   <h4 >Joseph Altshuler and Zack Morrison</h4>
@@ -53,7 +53,7 @@ We work across scales, including designs for buildings, interiors, installations
 <h2>Team Members</h2>
 <div class="teamcontainer">
      <div class="teammember">
-        <img src="/user/pages/04.about/joseph.jpg">
+        <img src="{{ base_url}}/user/pages/04.about/joseph.jpg">
     </div>
 <div class="teammember">
 <h4 >Intern Name</h4>
