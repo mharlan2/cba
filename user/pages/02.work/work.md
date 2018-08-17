@@ -10,5 +10,5 @@ content:
 ---
 
 <div id="mast">
-<img src="cba_logo_grad.svg">
+<img src="/user/pages/02.work/cba_logo_grad.svg">
 </div>
