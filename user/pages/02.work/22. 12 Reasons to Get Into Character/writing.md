@@ -22,6 +22,8 @@ networking at the concert, and nightcaps on the rooftop.”
 <h4>Essay</h4>
 
 <span class="textcolor">2015 — Complete</span>
+<br/>
+<br/>
 <p>In literature, characters are almost always animate beings, whether human or animal. This reinforces a conventional subject-object relationship in which living subjects impact inanimate objects. To be an architectural character, however, conflates a typical understanding of subjecthood and objecthood. While typically we conceive of buildings as objects that implicate human subjects, the architectural character suggests that a building might be considered an active subject that impacts human ""objects."" 
 
 In the wake of postmodernism, parametricism, and other experiments of the 90's, R.E. Somol theorized shape as a way to liberate architecture from scientific metrics and critical interpretation in order to provoke immediate communication with new audiences. Characters expand and amplify architecture's communication by straddling both affective and representational techniques. An arresting character appeals to both our senses and our intellect, and indulges in quirky misalignments between the two. 

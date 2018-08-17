@@ -2,7 +2,7 @@
 
 {% set show_sidebar = header_var('show_sidebar')|default(true) %}
 
-{% set collection = page.collection() %}
+{% set collection = page.collection().published %}
 
 
 
@@ -30,10 +30,10 @@
            
             {% if page.media.files %}     
             {% set first_image = page.media.files|first %}
-                {{first_image.thumbnail('page').html}}
+                {{first_image.html}}
             {% else %}
         		{% set first_image = page.media.images|first %}
-                {{first_image.thumbnail('page').html}}
+                {{first_image.html}}
             {% endif %}
 
           
@@ -84,7 +84,7 @@
 </svg>-->
 
 <svg class="other" x="0px" y="0px"
-   width="1400px" opacity= "0" height="1000px" viewBox="0 0 1400 1000" style="position:absolute;enable-background:new 0 0 1400 1000;" >
+   width="0px" opacity= "0" height="0px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
    <defs>
    <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#E7574D"/>

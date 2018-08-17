@@ -27,15 +27,16 @@
     	{{ page.content }}
       <div id="relatedcontainer">
       <br/>
-      <ul>
       <p> Related Work </p>
+      <ul>
+      
       {% set random_related = related.random(2) %}
         {% for page in random_related %}
         {% if page.visible %}
-          {% set first_image = page.media.all|first %}
+         {% set first_image = page.media.all|first %}
           <li><a href="{{ page.url }}">
-            {{first_image.thumbnail('page').resize(150, 75)}}
-
+            
+               {{first_image.thumbnail('page').display('thumbnail').resize(150, 75)}}
           </a>
           <a href="{{ page.url }}">{{ page.title }}</a>
         </li>
