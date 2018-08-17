@@ -42,7 +42,7 @@ We work across scales, including designs for buildings, interiors, installations
 </br>
 <div class="teamcontainer">
     <div class="teammember">
-        <img src="/user/pages/04.about/josephandzack.jpg">
+        <img src="http://www.matthewharlan.com/archive/cba/user/pages/04.about/josephandzack.jpg">
     </div>
 <div class="teammember">
   <h4 >Joseph Altshuler and Zack Morrison</h4>
