@@ -9,9 +9,9 @@
         <a class="label label-rounded {{ label_class }}" href="/{{ taxonomy }}{{ config.system.param_sep }}{{ tax }}">{{ tax }}</a>
     {% endfor %}
      -->
-    <a class="label label-rounded label-secondary" href="{{ base_url }}"> ALL </a>
-    <a class="label label-rounded {{ label_class }}" href="{{ base_url }}/tag:building">building</a>
- 	<a class="label label-rounded {{ label_class }}" href="{{ base_url }}/tag:thinking">thinking</a>
-    <a class="label label-rounded {{ label_class }}" href="{{ base_url }}/tag:writing">writing</a>
-    <a class="label label-rounded {{ label_class }}" href="{{ base_url }}/tag:teaching">teaching</a>
+    <a class="label label-rounded label-secondary" href="{{ base_url }}#tag"> ALL </a>
+    <a class="label label-rounded {{ label_class }}" href="/tag:building#tag">building</a>
+ 	<a class="label label-rounded {{ label_class }}" href="/tag:thinking#tag">thinking</a>
+    <a class="label label-rounded {{ label_class }}" href="/tag:writing#tag">writing</a>
+    <a class="label label-rounded {{ label_class }}" href="/tag:teaching#tag">teaching</a>
 {% endif %}

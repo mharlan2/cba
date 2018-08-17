@@ -1,7 +1,7 @@
 ---
 title: About
+media_order: 'couldbearchitecturelogo.png,joseph.jpg,zack.jpg,IMG_0747.JPG'
 menu: About
-
 ---
 
 <div id="about">
@@ -42,7 +42,7 @@ We work across scales, including designs for buildings, interiors, installations
 </br>
 <div class="teamcontainer">
     <div class="teammember">
-        <img src="{{ base_url }}/user/pages/04.about/joseph.jpg">
+        <img src="/user/pages/04.about/josephandzack.jpg">
     </div>
 <div class="teammember">
   <h4 >Joseph Altshuler and Zack Morrison</h4>
@@ -50,10 +50,10 @@ We work across scales, including designs for buildings, interiors, installations
   </div>
 </div>
 
-<h2>Team Members</h2>
+<!--<h2>Team Members</h2>
 <div class="teamcontainer">
      <div class="teammember">
-        <img src="{{ base_url}}/user/pages/04.about/joseph.jpg">
+        <img src="IMG_0747.JPG">
     </div>
 <div class="teammember">
 <h4 >Intern Name</h4>
@@ -61,4 +61,4 @@ We work across scales, including designs for buildings, interiors, installations
 </div>
 </div>
 </br>
-</div>
+</div>-->

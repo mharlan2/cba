@@ -43,19 +43,19 @@ h3 {
 blockquote{
 	font-size: 24px;
 }
-.grid {
+#grid {
 	margin-left:80px;
 	-webkit-transition: opacity ease-in-out .25s; /* Safari */
     transition: opacity .25s;
 }
 
-.grid:hover .grid-item {
+#grid:hover .grid-item {
 	opacity: .25;
 	-webkit-transition: opacity ease-in-out .25s; /* Safari */
     transition: opacity .25s;
 }
 
-.grid .grid-item:hover {
+#grid .grid-item:hover {
 	opacity:1;
 	-webkit-transition: opacity ease-in-out .25s; /* Safari */
     transition: opacity .25s;
@@ -113,6 +113,14 @@ blockquote{
 	-webkit-transition: opacity .25s ease-in-out; /* Safari */
     transition: opacity ease-in-out .25s;
     transition-delay: .15s;
+}
+
+#tag {
+	display:block;
+	height:1px;
+	width:1px;
+	position:absolute;
+	top:600px;
 }
 
 
@@ -347,6 +355,14 @@ a.title{
     position: absolute;
     transform: rotate(270deg);
 }
+
+#mast img{
+	width:70%;
+	margin-top:15%;
+	margin-left:15%;
+	margin-bottom:20%
+}
+
 
 #line {
 	position: fixed;

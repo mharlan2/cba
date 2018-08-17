@@ -15,8 +15,8 @@
 		{% endblock %}
 	{% endembed %}
 
-   
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
+   <div id="tag"></div>
+    <div id="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
 
 
   <!--{{ instagram_feed() }}-->
@@ -83,7 +83,7 @@
 
 </svg>-->
 
-<svg id="line" x="0px" y="0px"
+<svg class="other" x="0px" y="0px"
    width="1400px" height="1000px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
    <defs>
    <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -91,9 +91,14 @@
       <stop offset="100%" stop-color="#ff8c00"/>
     </linearGradient>
   </defs>
-  <path id ="lineA" opacity = "1" stroke="url(#linear)" style="fill:none;stroke-width:6;stroke-miterlimit:10;" d="M61,500c0,0,264.499,0,628.5,0s649.5,0,649.5,0"/>
 </svg>
-<svg id="other" x="0px" y="0px"
+<svg id="line" x="0px" y="0px"
+   width="1400px" height="1000px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
+
+  <path id ="lineA" opacity = "1" stroke="url(#linear)" style="fill:none;stroke-width:6;stroke-miterlimit:10;" d="M100,625.78c0,0,511.5,0.72,640,0.72
+  s560-0.72,560-0.72"/>
+</svg>
+<svg class="other" x="0px" y="0px"
    width="1400px" height="1000px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
   <path id ="lineB" opacity="0" style="fill:none;stroke:#E7574D;stroke-width:6;stroke-miterlimit:10;" d="M700,100.42c216.705,0,392.38,182.875,392.38,399.58
   c0,216.705-175.675,392.38-392.38,392.38S307.62,716.705,307.62,500c0-216.706,175.675-387.338,392.38-387.338"/>
@@ -187,8 +192,10 @@
   return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
+  function moveToGrid () { window.location.hash = '#grid'; }
 
-var $grid = $('.grid').imagesLoaded( function() {
+
+var $grid = $('#grid').imagesLoaded( function() {
   $('.grid-item').each(function(){
     if (getRandomInt(0,10) <= 3) {
         $(this).addClass('large');
@@ -197,6 +204,9 @@ var $grid = $('.grid').imagesLoaded( function() {
       }
         $(this).css({'marginTop' : getRandomInt(-40,40), 'marginLeft' : getRandomInt(-40,40)});
       });
+
+  
+ 
 
   $grid.masonry({
 
@@ -299,17 +309,20 @@ var gridItemFunc = [
     ];  
     
 
-
     
 $( document ).ready(function() {
 
 var Sticky = new hcSticky('#sidebar', {
-  stickTo: '.grid'
+  stickTo: '#grid'
 });
 
 Sticky.update({
   top: 20
 });
+
+    
+    var mast = document.getElementById("mast");
+    mast.addEventListener("mouseenter", toDefault() );
 
     var gridItem = document.getElementsByClassName("grid-item");
     
