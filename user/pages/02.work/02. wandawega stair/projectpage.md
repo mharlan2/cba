@@ -17,3 +17,5 @@ content:
 Architectural Design
 
 This series of new staircase designs for an existing vacation home negotiate the small footprint between the first and second story. Each scheme articulates openness and presence at the same time.
+
+Additional text for test.
