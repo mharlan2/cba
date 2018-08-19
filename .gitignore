@@ -7,6 +7,11 @@ logs/*
 images/*
 user/data/*
 
+#user updated content
+user/pages/02.work/
+user/pages/03. news/
+user/pages/04.about/
+
 # OS Generated
 .DS_Store*
 ehthumbs.db

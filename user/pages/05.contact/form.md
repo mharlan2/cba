@@ -34,7 +34,23 @@ form:
         -
             type: reset
             value: Reset
+
+process:
+        - email:
+            from: "{{ config.plugins.email.from }}"
+            to:
+              - "{{ config.plugins.email.from }}"
+            subject: "[Site Contact Form] {{ form.value.name|e }}"
+            body: "{% include 'forms/data.html.twig' %}"
+        - save:
+            fileprefix: contact-
+            dateformat: Ymd-His-u
+            extension: txt
+            body: "{% include 'forms/data.txt.twig' %}"
+        - message: Thank you for getting in touch!
+        - display: thankyou
 ---
+
 
 <h2 style="text-align:center">Get in Touch</h2>
 </br>
