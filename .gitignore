@@ -8,6 +8,8 @@ images/*
 user/data/*
 
 #user updated content
+.profile
+.htaccess
 user/pages/02.work/
 user/pages/03. news/
 user/pages/04.about/
