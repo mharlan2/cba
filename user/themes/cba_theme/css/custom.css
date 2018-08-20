@@ -415,7 +415,7 @@ a.title{
 }
 
 
-.toast .toast-success .mt-2 .mb-2 {
+.toast .toast-success{
 	max-width: 800px;
 	margin-right:auto;
 	margin-left:auto;
