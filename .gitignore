@@ -11,6 +11,8 @@ user/data/*
 .profile
 .htaccess
 user/pages/*
+user/config/*
+vendor/composer/*
 
 # OS Generated
 .DS_Store*
