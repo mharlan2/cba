@@ -469,7 +469,10 @@ form .form-input[type=range]:focus {
   color: #454d5d;
 }
 #header .logo svg path {
-  fill: #222;
+  fill: black;
+}
+#header .logo:hover svg path {
+  fill: #E65043;
 }
 .header-dark #header:not(.scrolled) {
   background: #222;

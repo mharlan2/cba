@@ -2734,6 +2734,9 @@ summary.accordion-header::-webkit-details-marker {
   display: block;
   padding: 0.4rem;
   width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .toast.toast-primary {
   background: rgba(255, 140, 0, 0.9);

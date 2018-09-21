@@ -19,8 +19,11 @@ p {
 	line-height: 1.8;
 }
 
+
+
 ul {
 		list-style-type: none;
+
 }
 
 .teammember li {
@@ -49,11 +52,13 @@ form {
 	margin-left: auto;
 	margin-right:auto;
 }
+
 #grid {
 	margin-left:80px;
 	-webkit-transition: opacity ease-in-out .25s; /* Safari */
     transition: opacity .25s;
 }
+
 
 #grid:hover .grid-item {
 	opacity: .25;
@@ -86,33 +91,6 @@ form {
 }
 
 
-/* .gridoverlay {
-	position:absolute;
-	opacity:0;	
-	background-color: #000;
-	width:100%;
-	height:100%;
-	z-index:10;
-	opacity: 1;
-}
-
-.grid-item:hover .gridoverlay{
-	opacity: .4;	
-}
-
-
-.grid-item:hover img{
-	opacity: .4;
-	
-	-webkit-transition: opacity ease-in-out .25s; 
-    transition: opacity .25s;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
-
-}
-
-*/
-
 .grid-item:hover a{
 	opacity:1;
 	cursor: pointer;
@@ -121,13 +99,7 @@ form {
     transition-delay: .15s;
 }
 
-#tag {
-	display:block;
-	height:1px;
-	width:1px;
-	position:absolute;
-	top:600px;
-}
+
 
 
 a.title{
@@ -147,7 +119,22 @@ a.title{
     transform: translate(-50%, -50%);
 }
 
+.insta {
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color: white;
+	width: fit-content;
+	height: fit-content;
+    border: 17px solid white;
+    box-shadow: 0px 7px 12px black;
+    margin-bottom: 20px;
+    z-index: 100;
+
+}
+
 .insta a{
+	width:150px;
 	display: block;
 	opacity: 1 !important;
 	top: 0%;
@@ -179,7 +166,6 @@ a.title{
 	width:600px;
 	height: fit-content;
 	padding-left:50px;
-
 	padding-top:0px;
 	margin-bottom:20px;
 }
@@ -384,6 +370,7 @@ a.title{
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-duration: 2s;
+	z-index: -1;
 }
 
 .other {
@@ -460,11 +447,16 @@ a.title{
 
 }
 
-	.projtitle a{
+	a.title {
 		opacity:1;
 		text-align:none;
 		position:relative;
 		font-size: 36px;
+
+	}
+
+	.insta {
+		display:none;
 	}
 
 	#writingcontainer{
@@ -478,6 +470,15 @@ a.title{
 
 	.grid{
 		margin: 0px;
+		opacity:1;
+	}
+
+	#grid:hover .grid-item {
+		opacity: 1;
+	}
+
+	#grid .grid-item:hover {
+		opacity:1;
 	}
 
 	.large {
@@ -502,10 +503,22 @@ a.title{
 		padding: 10px;
 	}
 
+	.insta {
+		display:none;
+	}
+
 	.container.grid-xl {
 	max-width: 90%;
 	margin-left:10px;
 
+	}
+
+	#grid:hover .grid-item {
+		opacity: 1;
+	}
+
+	#grid .grid-item:hover {
+		opacity:1;
 	}
 
 	#line {

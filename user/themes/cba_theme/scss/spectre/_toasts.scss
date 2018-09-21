@@ -7,6 +7,9 @@
   display: block;
   padding: $layout-spacing;
   width: 100%;
+  max-width: 800px;
+  margin-right:auto;
+  margin-left:auto;
 
   &.toast-primary {
     @include toast-variant($primary-color);

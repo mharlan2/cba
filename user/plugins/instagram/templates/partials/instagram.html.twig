@@ -1,5 +1,6 @@
 {% for post in feed|slice(0, count)  %}
-<div class="grid-item">
-    <a class="insta" href="{{ post.link }}" target="_blank"><img src="{{ post.image }}" alt=""></a></li>
+<div class="insta">
+	<a onclick="this.parentNode.style.display = 'none'"><img src="user/images/close.png"></a> 
+    <a class="" href="{{ post.link }}" target="_blank"><img src="{{ post.image }}" alt=""></a></li>
 </div>
 {% endfor %}

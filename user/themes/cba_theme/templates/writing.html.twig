@@ -5,7 +5,7 @@
 {% block content %}
 <div id="projpcontainer">
   <div id="projpleft">
-    {% for image in page.media.images %}
+    {% for image in page.media.all %}
 
          <a href="{{ image.url(false) }}">
            <img src="{{ image.url }}"/>

@@ -15,8 +15,13 @@
   }
 
   .logo svg path {
-    fill: $header-color-dark;
+  fill: black;
   }
+
+  .logo:hover svg path {
+  fill: #E65043;
+  }
+  
 
   .header-dark &:not(.scrolled) {
     background: $header-color-dark;

@@ -15,33 +15,37 @@
 		{% endblock %}
 	{% endembed %}
 
-   <div id="tag"></div>
+   
     <div id="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 100 }'>
 
 
-  <!--{{ instagram_feed() }}-->
+
 
     
     {% for page in page.collection %}
 
         {% if page.visible %}
 
-        	<div class ="grid-item">
-           
-            {% if page.media.files %}     
-            {% set first_image = page.media.files|first %}
-                {{first_image.html}}
-            {% else %}
-        		{% set first_image = page.media.images|first %}
-                {{first_image.html}}
-            {% endif %}
-
-          
-                    <a class="title" href="{{ page.url }}">{{page.menu}}</a>
-            
+         
+           {% for category in page.taxonomy.category %}
        
-            </div>
-        {% endif %}
+          
+          {% if category == "large" %}
+        	   <div class ="grid-item large">
+          {% else %}
+            <div class ="grid-item small">  
+          {% endif %} 
+
+          {% endfor %}
+
+          {% set first_image = page.media.all|first %}
+                {{first_image.display('thumbnail').thumb('page').html}}
+                <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+           
+        
+          </div>
+       
+     {% endif %}  
         
     {% endfor %}
 
@@ -49,7 +53,7 @@
 	
 	</div>
 
-
+  {{ instagram_feed() }}
 
 <!--<svg id="line" x="0px" y="0px"
    width="1400px" height="1000px" viewBox="0 0 1400 1000" style="enable-background:new 0 0 1400 1000;" >
@@ -197,11 +201,11 @@
 
 var $grid = $('#grid').imagesLoaded( function() {
   $('.grid-item').each(function(){
-    if (getRandomInt(0,10) <= 3) {
-        $(this).addClass('large');
-      } else {
-        $(this).addClass('small');
-      }
+    // if (getRandomInt(0,10) <= 3) {
+    //   $(this).addClass('large');
+    // } else {
+    //    $(this).addClass('small');
+    //  }
         $(this).css({'marginTop' : getRandomInt(-40,40), 'marginLeft' : getRandomInt(-40,40)});
       });
 
@@ -211,6 +215,19 @@ var $grid = $('#grid').imagesLoaded( function() {
   $grid.masonry({
 
   });
+
+  $('.insta').each(function(){
+    // if (getRandomInt(0,10) <= 3) {
+    //   $(this).addClass('large');
+    // } else {
+    //    $(this).addClass('small');
+    //  }
+    var randomRotate = "rotate" + "(" + getRandomInt(-10,10) + "deg" + ")";
+        $(this).css({'marginTop' : getRandomInt(500,($(document).height() - 300)), 'marginLeft' : getRandomInt(150,($(document).width() - 300)), 'transform' : randomRotate });
+        console.log(randomRotate);
+      });
+
+
 });
   
   </script>
@@ -319,6 +336,8 @@ var Sticky = new hcSticky('#sidebar', {
 Sticky.update({
   top: 20
 });
+
+
 
     
     var mast = document.getElementById("mast");
