@@ -26,26 +26,39 @@
 
         {% if page.visible %}
 
-         
-           {% for category in page.taxonomy.category %}
+        {% if page.taxonomy.category %}  
+              {% for category in page.taxonomy.category %}
        
           
-          {% if category == "large" %}
-        	   <div class ="grid-item large">
-          {% else %}
-            <div class ="grid-item small">  
-          {% endif %} 
-
-          {% endfor %}
-
-          {% set first_image = page.media.all|first %}
+              {% if category == "large" %}
+        	     <div class ="grid-item large">
+                 {% set first_image = page.media.all|first %}
+                 {{first_image.display('thumbnail').thumb('page').html}}
+                   <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+              </div>
+              {% else %}
+              <div class ="grid-item small"> 
+             {% set first_image = page.media.all|first %}
                 {{first_image.display('thumbnail').thumb('page').html}}
                 <a class="title" href="{{ page.url }}">{{page.menu}}</a>
-           
-        
-          </div>
+              </div> 
+         
+              {% endif %}
+             {% endfor %} 
+
+           {% else %}
+            <div class ="grid-item small"> 
+             {% set first_image = page.media.all|first %}
+                {{first_image.display('thumbnail').thumb('page').html}}
+                <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+              </div> 
+           {% endif %}
        
-     {% endif %}  
+
+      
+      
+       
+       {% endif %}  
         
     {% endfor %}
 
