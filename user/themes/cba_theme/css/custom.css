@@ -175,14 +175,14 @@ a.title{
 }
 
 #relatedcontainer ul li {
-    margin-left: -40px;
+    margin-left: -22px;
 }
 
 #relatedcontainer li a {
 	line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
- 	width:170px;
+ 	width:140px;
 }
 
 #projpleft img{

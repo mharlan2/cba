@@ -11,8 +11,10 @@
 
 
     {% for image in page.media.all %}
+      {% set extension = image.url|split('/')|last %}  
+                {% if extension|contains('thumb') %}
 
-
+                {% else %}
 
     <div class="hideme">
        
@@ -20,7 +22,7 @@
     
         </a>
     </div>
-
+  {% endif %}
     {% endfor %}
   </div>
 	  
@@ -33,17 +35,21 @@
       <p> Related Work </p>
       <ul>
       
-      {% set random_related = related.random(2) %}
+        {% set random_related = related.random(2) %}
         {% for page in random_related %}
-        {% if page.visible %}
-         {% set first_image = page.media.all|first %}
-          <li><a href="{{ page.url }}">
-            
-               {{first_image.thumbnail('page').display('thumbnail').resize(150, 75)}}
-          </a>
-          <a href="{{ page.url }}">{{ page.title }}</a>
-        </li>
-        {% endif %}
+          {% if page.visible %}
+            {% for image in page.media.all %}
+                {% set extension = image.url|split('/')|last %}  
+                {% if extension|contains('thumb2') %}
+                  <li>
+                    <a href="{{page.url}}">
+                      {{ image.html }}
+                    </a>
+                {% endif %}
+            {% endfor %}
+            <a href="{{ page.url }}">{{ page.title }}</a>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
     	</div>

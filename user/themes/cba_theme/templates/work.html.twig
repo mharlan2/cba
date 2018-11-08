@@ -32,15 +32,33 @@
           
               {% if category == "large" %}
         	     <div class ="grid-item large">
-                 {% set first_image = page.media.all|first %}
-                 {{first_image.display('thumbnail').thumb('page').html}}
-                   <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+                {% for image in page.media.all %}
+                {% set extension = image.url|split('/')|last %}  
+                {% if extension|contains('thumb1') %}
+           
+                        {{ image.html }}
+
+                {% endif %}
+              {% endfor %}
+
+                  <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+                
+               
               </div>
               {% else %}
               <div class ="grid-item small"> 
-             {% set first_image = page.media.all|first %}
-                {{first_image.display('thumbnail').thumb('page').html}}
-                <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+               
+               {% for image in page.media.all %}
+                {% set extension = image.url|split('/')|last %}  
+                {% if extension|contains('thumb1') %}
+           
+                        {{ image.html }}
+
+                {% endif %}
+              {% endfor %}
+
+                  <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+
               </div> 
          
               {% endif %}
@@ -48,9 +66,18 @@
 
            {% else %}
             <div class ="grid-item small"> 
-             {% set first_image = page.media.all|first %}
-                {{first_image.display('thumbnail').thumb('page').html}}
-                <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+               
+               {% for image in page.media.all %}
+                {% set extension = image.url|split('/')|last %}  
+                {% if extension|contains('thumb1') %}
+           
+                        {{ image.html }}
+
+                {% endif %}
+              {% endfor %}
+
+                  <a class="title" href="{{ page.url }}">{{page.menu}}</a>
+               
               </div> 
            {% endif %}
        
