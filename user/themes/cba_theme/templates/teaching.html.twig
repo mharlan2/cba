@@ -8,15 +8,22 @@
 <div id="projpcontainer">
 
   <div id="projpleft">
-    {% for image in page.media.all %}
 
-    
+
+
+    {% for image in page.media.all %}
+      {% set extension = image.url|split('/')|last %}  
+                {% if extension|contains('thumb') %}
+
+                {% else %}
+
     <div class="hideme">
-         <a href="{{ image.url(false) }}">
-           <img src="{{ image.url }}"/>
+       
+           {{ image.html }}
+    
         </a>
     </div>
-   
+  {% endif %}
     {% endfor %}
   </div>
 

@@ -5,12 +5,24 @@
 {% block content %}
 <div id="projpcontainer">
   <div id="projpleft">
-    {% for image in page.media.all %}
 
-         <a href="{{ image.url(false) }}">
-           <img src="{{ image.url }}"/>
+
+
+    {% for image in page.media.all %}
+      {% set extension = image.url|split('/')|last %}  
+                {% if extension|contains('thumb') %}
+
+                {% else %}
+
+    <div class="hideme">
+       
+           {{ image.html }}
+    
         </a>
-    {% endfor %} 
+    </div>
+  {% endif %}
+    {% endfor %}
+  
     {{ page.content }}
 
      <div id="relatedcontainer">
@@ -42,6 +54,19 @@ jQuery(document).ready(function($) {
   $('#projpright').hcSticky({
     stickTo: '#projpcontainer'
   });
-  });
+
+    $(window).scroll( function(){
+        $('.hideme').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height() + 300;
+            if( bottom_of_window > bottom_of_object){
+                $(this).addClass('showme');
+            }
+            if( bottom_of_window < bottom_of_object ){
+                $(this).removeClass('showme');
+            }
+        });
+    });
+});
 </script>
 {% endblock %}
